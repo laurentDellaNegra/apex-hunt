@@ -14,6 +14,9 @@ import { GlobalStyle } from 'styles/global-styles';
 
 import { HomePage } from './containers/HomePage/Loadable';
 import { NotFoundPage } from './components/NotFoundPage/Loadable';
+import { Header } from './components/Header';
+import { BrowsePage } from './containers/BrowsePage';
+import { DetailsPage } from './containers/DetailsPage';
 
 export function App() {
   return (
@@ -24,9 +27,11 @@ export function App() {
       >
         <meta name="description" content="A React Boilerplate application" />
       </Helmet>
-
+      <Header />
       <Switch>
         <Route exact path="/" component={HomePage} />
+        <Route exact path="/browse" component={BrowsePage} />
+        <Route exact path="/details" component={DetailsPage} />
         <Route component={NotFoundPage} />
       </Switch>
       <GlobalStyle />
