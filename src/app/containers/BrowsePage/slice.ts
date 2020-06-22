@@ -29,6 +29,7 @@ const browsePageSlice = createSlice({
     browsePlayers(state) {
       state.loading = true;
       state.playerFounds = [];
+      state.error = undefined;
     },
     foundPlayers(state, action: PayloadAction<Player[]>) {
       state.playerFounds = action.payload;

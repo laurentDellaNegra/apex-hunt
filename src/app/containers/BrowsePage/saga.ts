@@ -1,4 +1,4 @@
-import { call, put, select, takeLatest } from 'redux-saga/effects';
+import { takeEvery, call, put, select, takeLatest } from 'redux-saga/effects';
 import { request } from 'utils/request';
 import { serverBaseUrl, createConfig } from 'utils/api';
 import { actions } from './slice';
@@ -42,6 +42,22 @@ export function* getPlayers() {
   }
 }
 
+// export function* getPlayerOverview(action) {
+//   const id: string = action.payload.id;
+//   const platform: string = action.payload.platform;
+
+//   // Get API info
+//   const requestURL = `${serverBaseUrl}/profile/${platform}/${id}`;
+//   const options = createConfig();
+
+//   try {
+//     // Call utils/request
+//     // TODO replace any
+//     const dto: any = yield call(request, requestURL, options);
+
+//   }
+// }
+
 /**
  * Root saga manages watcher lifecycle
  */
@@ -51,6 +67,9 @@ export function* browsePageSaga() {
   // It returns task descriptor (just like fork) so we can continue execution
   // It will be cancelled automatically on component unmount
   yield takeLatest(actions.browsePlayers.type, getPlayers);
+
+  // Watches if a player is added and calls getPlayerOverview
+  // yield takeEvery(actions.addPlayer.type, getPlayerOverview);
 }
 
 // Converting request from API
