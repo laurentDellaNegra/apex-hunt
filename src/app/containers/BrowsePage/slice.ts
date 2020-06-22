@@ -1,10 +1,11 @@
 import { PayloadAction } from '@reduxjs/toolkit';
 import { createSlice } from 'utils/@reduxjs/toolkit';
-import { ContainerState, PlatformType, Player } from './types';
+import { ContainerState, PlatformType, Player, PlayerErrorType } from './types';
 
 // The initial state of the BrowsePage container
 export const initialState: ContainerState = {
-  playerIdSearched: '',
+  playerIdSearched: 'lepicho',
+  platform: PlatformType.ORIGIN,
   playerFounds: [],
   loading: false,
   players: [
@@ -22,6 +23,9 @@ const browsePageSlice = createSlice({
     setPlayerId(state, action: PayloadAction<string>) {
       state.playerIdSearched = action.payload;
     },
+    setPlatform(state, action: PayloadAction<PlatformType>) {
+      state.platform = action.payload;
+    },
     browsePlayers(state) {
       state.loading = true;
       state.playerFounds = [];
@@ -30,7 +34,7 @@ const browsePageSlice = createSlice({
       state.playerFounds = action.payload;
       state.loading = false;
     },
-    errorPlayers(state, action: PayloadAction<string>) {
+    errorPlayers(state, action: PayloadAction<PlayerErrorType>) {
       state.error = action.payload;
       state.loading = false;
     },

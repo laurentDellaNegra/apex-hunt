@@ -10,6 +10,11 @@ export const selectPlayerIdSearched = createSelector(
   browsePageState => browsePageState.playerIdSearched,
 );
 
+export const selectPlatform = createSelector(
+  [selectDomain],
+  browsePageState => browsePageState.platform,
+);
+
 export const selectError = createSelector(
   [selectDomain],
   browsePageState => browsePageState.error,

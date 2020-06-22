@@ -16,8 +16,10 @@ import {
   selectPlayerIdSearched,
   selectPlayerFounds,
   selectError,
+  selectPlatform,
 } from './selectors';
 import { browsePageSaga } from './saga';
+import { PlatformType } from './types';
 
 interface Props {}
 
@@ -26,6 +28,7 @@ export const BrowsePage = memo((props: Props) => {
   useInjectSaga({ key: sliceKey, saga: browsePageSaga });
 
   const playerIdSearched = useSelector(selectPlayerIdSearched);
+  const platform = useSelector(selectPlatform);
   const playersFound = useSelector(selectPlayerFounds);
   const error = useSelector(selectError);
   const dispatch = useDispatch();
@@ -41,6 +44,11 @@ export const BrowsePage = memo((props: Props) => {
     dispatch(actions.setPlayerId(e.currentTarget.value));
   };
 
+  const onChangePlatform = (e: React.FormEvent<HTMLInputElement>) => {
+    dispatch(actions.setPlatform(e.currentTarget.value as PlatformType));
+  };
+
+  const platforms = Object.values(PlatformType);
   return (
     <>
       <Helmet>
@@ -52,12 +60,24 @@ export const BrowsePage = memo((props: Props) => {
         value={playerIdSearched}
         onChange={onChangePlayerIdSearched}
       ></input>
+      {platforms.map(p => (
+        <label key={p}>
+          <input
+            type="radio"
+            value={p}
+            checked={p === platform}
+            onChange={onChangePlatform}
+          />
+          {p}
+        </label>
+      ))}
       <button onClick={onSearch}>Search</button>
       <p>Result</p>
       <ul>
         {playersFound.map(p => (
           <li key={p.id}>
-            {p.platform}
+            <span>{p.id}</span>&nbsp;
+            <span>{p.platform}</span>
             <button>Add</button>
           </li>
         ))}

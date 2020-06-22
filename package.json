@@ -115,5 +115,6 @@
         "statements": 90
       }
     }
-  }
+  },
+  "proxy": "https://public-api.tracker.gg/"
 }
