@@ -5,11 +5,18 @@ import { Provider } from 'react-redux';
 
 import { configureAppStore } from 'store/configureStore';
 import { PlayerCard } from '..';
+import { Player } from 'types/Player';
+import { PlatformEnum } from 'types/PlatformEnum';
+
+const player: Player = {
+  id: 'lepicho',
+  platform: PlatformEnum.ORIGIN,
+};
 
 const renderComponent = (store: Store) =>
   render(
     <Provider store={store}>
-      <PlayerCard />
+      <PlayerCard player={player} />
     </Provider>,
   );
 

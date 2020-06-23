@@ -16,6 +16,7 @@ import {
   selectPlayerFounds,
   selectError,
   selectPlatform,
+  selectLoading,
 } from './selectors';
 import { searchFormSaga } from './saga';
 import { PlatformEnum } from 'types/PlatformEnum';
@@ -36,6 +37,7 @@ export const SearchForm = memo(({ onAddPlayer }: Props) => {
   const playerIdSearched = useSelector(selectPlayerIdSearched);
   const platform = useSelector(selectPlatform);
   const playersFound = useSelector(selectPlayerFounds);
+  const loading = useSelector(selectLoading);
   const error = useSelector(selectError);
 
   const onSearch = () => {
@@ -48,6 +50,12 @@ export const SearchForm = memo(({ onAddPlayer }: Props) => {
 
   const onChangePlatform = (e: React.FormEvent<HTMLInputElement>) => {
     dispatch(actions.setPlatform(e.currentTarget.value as PlatformEnum));
+  };
+
+  const addPlayer = (p: Player) => {
+    onAddPlayer(p);
+    dispatch(actions.setPlayerId(''));
+    dispatch(actions.foundPlayers([]));
   };
 
   const handleSubmit = (e: React.SyntheticEvent) => {
@@ -75,6 +83,7 @@ export const SearchForm = memo(({ onAddPlayer }: Props) => {
           </label>
         ))}
         <button type="submit">Search</button>
+        {loading && <span>Loading...</span>}
       </Form>
       <Result>
         {playersFound?.length > 0 ? (
@@ -83,7 +92,7 @@ export const SearchForm = memo(({ onAddPlayer }: Props) => {
               <li key={p.id}>
                 <span>{p.id}</span>&nbsp;
                 <span>{p.platform}</span>
-                <button onClick={() => onAddPlayer(p)}>Add</button>
+                <button onClick={() => addPlayer(p)}>Add</button>
               </li>
             ))}
           </ul>

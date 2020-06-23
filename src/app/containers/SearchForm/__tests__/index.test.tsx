@@ -9,7 +9,7 @@ import { SearchForm } from '..';
 const renderComponent = (store: Store) =>
   render(
     <Provider store={store}>
-      <SearchForm />
+      <SearchForm onAddPlayer={console.log} />
     </Provider>,
   );
 
