@@ -16,6 +16,7 @@ import { selectPlayers } from './selectors';
 import { browsePageSaga } from './saga';
 import { Player } from 'types/Player';
 import { SearchForm } from '../SearchForm';
+import { PlayerCard } from '../PlayerCard';
 
 interface Props {}
 
@@ -39,11 +40,11 @@ export const BrowsePage = memo((props: Props) => {
         <meta name="description" content="Description of BrowsePage" />
       </Helmet>
       <Div>BrowsePage</Div>
-      <SearchForm onAddPlayer={p => addPlayer(p)} />
+      <SearchForm onAddPlayer={addPlayer} />
       <hr />
       <h1>Players</h1>
       {players.map((p: Player) => (
-        <p key={p.id}>{p.id}</p>
+        <PlayerCard key={p.id} player={p} />
       ))}
     </>
   );
