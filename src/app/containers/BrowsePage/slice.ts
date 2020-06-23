@@ -1,17 +1,15 @@
 import { PayloadAction } from '@reduxjs/toolkit';
 import { createSlice } from 'utils/@reduxjs/toolkit';
-import { ContainerState, PlatformType, Player, PlayerErrorType } from './types';
+import { ContainerState } from './types';
+import { Player } from 'types/Player';
+import { PlatformEnum } from 'types/PlatformEnum';
 
 // The initial state of the BrowsePage container
 export const initialState: ContainerState = {
-  playerIdSearched: 'lepicho',
-  platform: PlatformType.ORIGIN,
-  playerFounds: [],
-  loading: false,
   players: [
     {
       id: 'Lordgenova',
-      platform: PlatformType.ORIGIN,
+      platform: PlatformEnum.ORIGIN,
     },
   ],
 };
@@ -20,27 +18,11 @@ const browsePageSlice = createSlice({
   name: 'browsePage',
   initialState,
   reducers: {
-    setPlayerId(state, action: PayloadAction<string>) {
-      state.playerIdSearched = action.payload;
-    },
-    setPlatform(state, action: PayloadAction<PlatformType>) {
-      state.platform = action.payload;
-    },
-    browsePlayers(state) {
-      state.loading = true;
-      state.playerFounds = [];
-      state.error = undefined;
-    },
-    foundPlayers(state, action: PayloadAction<Player[]>) {
-      state.playerFounds = action.payload;
-      state.loading = false;
-    },
-    errorPlayers(state, action: PayloadAction<PlayerErrorType>) {
-      state.error = action.payload;
-      state.loading = false;
-    },
     addPlayer(state, action: PayloadAction<Player>) {
-      state.players.push(action.payload);
+      // Add if player doesn't exists
+      if (!state.players.find(p => p.id === action.payload.id)) {
+        state.players.push(action.payload);
+      }
     },
   },
 });

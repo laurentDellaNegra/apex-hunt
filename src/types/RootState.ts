@@ -1,5 +1,6 @@
 import { BrowsePageState } from 'app/containers/BrowsePage/types';
 import { DetailsPageState } from 'app/containers/DetailsPage/types';
+import { SearchFormState } from 'app/containers/SearchForm/types';
 // [IMPORT NEW CONTAINERSTATE ABOVE] < Needed for generating containers seamlessly
 
 /* 
@@ -9,5 +10,6 @@ import { DetailsPageState } from 'app/containers/DetailsPage/types';
 export interface RootState {
   browsePage?: BrowsePageState;
   detailsPage?: DetailsPageState;
+  searchForm?: SearchFormState;
   // [INSERT NEW REDUCER KEY ABOVE] < Needed for generating containers seamlessly
 }
