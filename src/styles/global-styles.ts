@@ -5,6 +5,9 @@ export const GlobalStyle = createGlobalStyle`
   body {
     height: 100%;
     width: 100%;
+    /**TODO: tmp theme */
+    background-color: black;
+    color: white;
   }
 
   body {
