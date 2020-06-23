@@ -26,7 +26,7 @@ interface Props {
   onAddPlayer: (p: Player) => void;
 }
 
-export const SearchForm = memo((props: Props) => {
+export const SearchForm = memo(({ onAddPlayer }: Props) => {
   useInjectReducer({ key: sliceKey, reducer: reducer });
   useInjectSaga({ key: sliceKey, saga: searchFormSaga });
   const dispatch = useDispatch();
@@ -56,7 +56,6 @@ export const SearchForm = memo((props: Props) => {
   };
 
   const platforms = Object.values(PlatformEnum);
-  const { onAddPlayer } = props;
   return (
     <>
       <Form onSubmit={handleSubmit}>
