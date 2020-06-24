@@ -9,3 +9,8 @@ export const selectPlayers = createSelector(
   [selectDomain],
   browsePageState => browsePageState.players,
 );
+
+export const selectPlayersOverview = createSelector(
+  [selectDomain],
+  browsePageState => browsePageState.playersOverview,
+);
