@@ -8,10 +8,10 @@ import { PlayerOverview } from 'types/PlayerOverview';
 // The initial state of the BrowsePage container
 export const initialState: ContainerState = {
   players: [
-    {
-      id: 'Lordgenova',
-      platform: PlatformEnum.ORIGIN,
-    },
+    { id: 'lepicho', platform: PlatformEnum.ORIGIN },
+    { id: 'Lordgenova', platform: PlatformEnum.ORIGIN },
+    { id: 'K1rua', platform: PlatformEnum.ORIGIN },
+    { id: 'hero0405', platform: PlatformEnum.ORIGIN },
   ],
   playersOverview: [],
 };

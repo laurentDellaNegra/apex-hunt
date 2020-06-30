@@ -6,7 +6,7 @@ import { PlayerOverview } from 'types/PlayerOverview';
 import { PlatformEnum } from 'types/PlatformEnum';
 
 const player: PlayerOverview = {
-  id: 'lepicho',
+  id: '',
   platform: PlatformEnum.ORIGIN,
   isLoading: true,
 };

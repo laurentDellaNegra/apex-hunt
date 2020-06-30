@@ -1,0 +1,373 @@
+{
+  "data": {
+    "platformInfo": {
+      "platformSlug": "origin",
+      "platformUserId": "lepicho",
+      "platformUserHandle": "lepicho",
+      "platformUserIdentifier": "lepicho",
+      "avatarUrl": "https://secure.download.dm.origin.com/production/avatar/prod/39/601/208x208.JPEG",
+      "additionalParameters": null
+    },
+    "userInfo": {
+      "userId": null,
+      "isPremium": false,
+      "isVerified": false,
+      "isInfluencer": false,
+      "countryCode": "FR",
+      "customAvatarUrl": null,
+      "customHeroUrl": null,
+      "socialAccounts": []
+    },
+    "metadata": {
+      "currentSeason": 2,
+      "activeLegend": "legend_4",
+      "activeLegendName": "Mirage"
+    },
+    "segments": [
+      {
+        "type": "overview",
+        "attributes": {},
+        "metadata": {
+          "name": "Lifetime"
+        },
+        "expiryDate": "2020-06-24T10:35:53.4114854+00:00",
+        "stats": {
+          "level": {
+            "rank": null,
+            "percentile": null,
+            "displayName": "Level",
+            "displayCategory": "Combat",
+            "category": null,
+            "metadata": {},
+            "value": 159,
+            "displayValue": "159",
+            "displayType": "Unspecified"
+          },
+          "kills": {
+            "rank": null,
+            "percentile": null,
+            "displayName": "Kills",
+            "displayCategory": "Combat",
+            "category": null,
+            "metadata": {},
+            "value": 970,
+            "displayValue": "970",
+            "displayType": "Unspecified"
+          },
+          "killsPerMatch": {
+            "rank": null,
+            "percentile": 98,
+            "displayName": "Kills Per Match",
+            "displayCategory": "Combat",
+            "category": null,
+            "metadata": {},
+            "value": 1.34,
+            "displayValue": "1.34",
+            "displayType": "Unspecified"
+          },
+          "killsAsKillLeader": {
+            "rank": null,
+            "percentile": 97,
+            "displayName": "Kills As Kill Leader",
+            "displayCategory": "Combat",
+            "category": null,
+            "metadata": {},
+            "value": 6,
+            "displayValue": "6",
+            "displayType": "Unspecified"
+          },
+          "matchesPlayed": {
+            "rank": null,
+            "percentile": 97.8,
+            "displayName": "Matches Played",
+            "displayCategory": "Game",
+            "category": null,
+            "metadata": {},
+            "value": 238,
+            "displayValue": "238",
+            "displayType": "Unspecified"
+          },
+          "rankScore": {
+            "rank": null,
+            "percentile": 88,
+            "displayName": "Rank Score",
+            "displayCategory": "Game",
+            "category": null,
+            "metadata": {
+              "iconUrl": "https://trackercdn.com/cdn/apex.tracker.gg/ranks/gold4.png",
+              "rankName": "Gold 4"
+            },
+            "value": 2876,
+            "displayValue": "2,876",
+            "displayType": "Unspecified"
+          },
+          "season4Wins": {
+            "rank": null,
+            "percentile": 92,
+            "displayName": "Season 4 Wins",
+            "displayCategory": "Game",
+            "category": null,
+            "metadata": {},
+            "value": 14,
+            "displayValue": "14",
+            "displayType": "Unspecified"
+          }
+        }
+      },
+      {
+        "type": "legend",
+        "attributes": {
+          "id": "legend_4"
+        },
+        "metadata": {
+          "name": "Mirage",
+          "imageUrl": "https://trackercdn.com/cdn/apex.tracker.gg/legends/mirage-tile.png",
+          "tallImageUrl": "https://trackercdn.com/cdn/apex.tracker.gg/legends/mirage-tall.png",
+          "bgImageUrl": "https://trackercdn.com/cdn/apex.tracker.gg/legends/mirage-concept-bg-small.jpg",
+          "isActive": true
+        },
+        "expiryDate": "2020-06-24T10:35:53.4114854+00:00",
+        "stats": {
+          "kills": {
+            "rank": null,
+            "percentile": 86,
+            "displayName": "Kills",
+            "displayCategory": "Combat",
+            "category": null,
+            "metadata": {},
+            "value": 319,
+            "displayValue": "319",
+            "displayType": "Unspecified"
+          },
+          "killsPerMatch": {
+            "rank": 5617,
+            "percentile": 98.9,
+            "displayName": "Kills Per Match",
+            "displayCategory": "Combat",
+            "category": null,
+            "metadata": {},
+            "value": 1.34,
+            "displayValue": "1.34",
+            "displayType": "Unspecified"
+          },
+          "matchesPlayed": {
+            "rank": 4020,
+            "percentile": 99.3,
+            "displayName": "Matches Played",
+            "displayCategory": "Game",
+            "category": null,
+            "metadata": {},
+            "value": 238,
+            "displayValue": "238",
+            "displayType": "Unspecified"
+          },
+          "season4Wins": {
+            "rank": 17831,
+            "percentile": 97.5,
+            "displayName": "Season 4 Wins",
+            "displayCategory": "Game",
+            "category": null,
+            "metadata": {},
+            "value": 6,
+            "displayValue": "6",
+            "displayType": "Unspecified"
+          }
+        }
+      },
+      {
+        "type": "legend",
+        "attributes": {
+          "id": "legend_11"
+        },
+        "metadata": {
+          "name": "Crypto",
+          "imageUrl": "https://trackercdn.com/cdn/apex.tracker.gg/legends/crypto-tile.png",
+          "tallImageUrl": "https://trackercdn.com/cdn/apex.tracker.gg/legends/crypto-tall.png",
+          "bgImageUrl": "https://trackercdn.com/cdn/apex.tracker.gg/legends/crypto-concept-bg-small.jpg",
+          "isActive": false
+        },
+        "expiryDate": "2020-06-24T10:35:53.4114854+00:00",
+        "stats": {}
+      },
+      {
+        "type": "legend",
+        "attributes": {
+          "id": "legend_13"
+        },
+        "metadata": {
+          "name": "Loba",
+          "imageUrl": "https://trackercdn.com/cdn/apex.tracker.gg/legends/loba-tile.png",
+          "tallImageUrl": "https://trackercdn.com/cdn/apex.tracker.gg/legends/loba-tall.png",
+          "bgImageUrl": "https://trackercdn.com/cdn/apex.tracker.gg/legends/loba-concept-bg-small.jpg",
+          "isActive": false
+        },
+        "expiryDate": "2020-06-24T10:35:53.4114854+00:00",
+        "stats": {
+          "kills": {
+            "rank": null,
+            "percentile": 43,
+            "displayName": "Kills",
+            "displayCategory": "Combat",
+            "category": null,
+            "metadata": {},
+            "value": 7,
+            "displayValue": "7",
+            "displayType": "Unspecified"
+          }
+        }
+      },
+      {
+        "type": "legend",
+        "attributes": {
+          "id": "legend_5"
+        },
+        "metadata": {
+          "name": "Bloodhound",
+          "imageUrl": "https://trackercdn.com/cdn/apex.tracker.gg/legends/bloodhound-tile.png",
+          "tallImageUrl": "https://trackercdn.com/cdn/apex.tracker.gg/legends/bloodhound-tall.png",
+          "bgImageUrl": "https://trackercdn.com/cdn/apex.tracker.gg/legends/bloodhound-concept-bg-small.jpg",
+          "isActive": false
+        },
+        "expiryDate": "2020-06-24T10:35:53.4114854+00:00",
+        "stats": {}
+      },
+      {
+        "type": "legend",
+        "attributes": {
+          "id": "legend_12"
+        },
+        "metadata": {
+          "name": "Revenant",
+          "imageUrl": "https://trackercdn.com/cdn/apex.tracker.gg/legends/revenant-tile.png",
+          "tallImageUrl": "https://trackercdn.com/cdn/apex.tracker.gg/legends/revenant-tall.png",
+          "bgImageUrl": "https://trackercdn.com/cdn/apex.tracker.gg/legends/revenant-concept-bg-small.jpg",
+          "isActive": false
+        },
+        "expiryDate": "2020-06-24T10:35:53.4114854+00:00",
+        "stats": {
+          "kills": {
+            "rank": null,
+            "percentile": 83,
+            "displayName": "Kills",
+            "displayCategory": "Combat",
+            "category": null,
+            "metadata": {},
+            "value": 65,
+            "displayValue": "65",
+            "displayType": "Unspecified"
+          }
+        }
+      },
+      {
+        "type": "legend",
+        "attributes": {
+          "id": "legend_8"
+        },
+        "metadata": {
+          "name": "Pathfinder",
+          "imageUrl": "https://trackercdn.com/cdn/apex.tracker.gg/legends/pathfinder-tile.png",
+          "tallImageUrl": "https://trackercdn.com/cdn/apex.tracker.gg/legends/pathfinder-tall.png",
+          "bgImageUrl": "https://trackercdn.com/cdn/apex.tracker.gg/legends/pathfinder-concept-bg-small.jpg",
+          "isActive": false
+        },
+        "expiryDate": "2020-06-24T10:35:53.4114854+00:00",
+        "stats": {
+          "kills": {
+            "rank": null,
+            "percentile": 78,
+            "displayName": "Kills",
+            "displayCategory": "Combat",
+            "category": null,
+            "metadata": {},
+            "value": 340,
+            "displayValue": "340",
+            "displayType": "Unspecified"
+          },
+          "grappleTravelDistance": {
+            "rank": null,
+            "percentile": 85,
+            "displayName": "Grapple: Travel Distance",
+            "displayCategory": "Game",
+            "category": null,
+            "metadata": {},
+            "value": 36263,
+            "displayValue": "36,263",
+            "displayType": "Unspecified"
+          }
+        }
+      },
+      {
+        "type": "legend",
+        "attributes": {
+          "id": "legend_6"
+        },
+        "metadata": {
+          "name": "Gibraltar",
+          "imageUrl": "https://trackercdn.com/cdn/apex.tracker.gg/legends/gibraltar-tile.png",
+          "tallImageUrl": "https://trackercdn.com/cdn/apex.tracker.gg/legends/gibraltar-tall.png",
+          "bgImageUrl": "https://trackercdn.com/cdn/apex.tracker.gg/legends/gibraltar-concept-bg-small.jpg",
+          "isActive": false
+        },
+        "expiryDate": "2020-06-24T10:35:53.4114854+00:00",
+        "stats": {
+          "kills": {
+            "rank": 43683,
+            "percentile": 91,
+            "displayName": "Kills",
+            "displayCategory": "Combat",
+            "category": null,
+            "metadata": {},
+            "value": 239,
+            "displayValue": "239",
+            "displayType": "Unspecified"
+          },
+          "killsAsKillLeader": {
+            "rank": 2171,
+            "percentile": 99.4,
+            "displayName": "Kills As Kill Leader",
+            "displayCategory": "Combat",
+            "category": null,
+            "metadata": {},
+            "value": 6,
+            "displayValue": "6",
+            "displayType": "Unspecified"
+          },
+          "season4Wins": {
+            "rank": 18971,
+            "percentile": 96.8,
+            "displayName": "Season 4 Wins",
+            "displayCategory": "Game",
+            "category": null,
+            "metadata": {},
+            "value": 8,
+            "displayValue": "8",
+            "displayType": "Unspecified"
+          }
+        }
+      },
+      {
+        "type": "legend",
+        "attributes": {
+          "id": "legend_10"
+        },
+        "metadata": {
+          "name": "Wattson",
+          "imageUrl": "https://trackercdn.com/cdn/apex.tracker.gg/legends/wattson-tile.png",
+          "tallImageUrl": "https://trackercdn.com/cdn/apex.tracker.gg/legends/wattson-tall.png",
+          "bgImageUrl": "https://trackercdn.com/cdn/apex.tracker.gg/legends/wattson-concept-bg-small.jpg",
+          "isActive": false
+        },
+        "expiryDate": "2020-06-24T10:35:53.4114854+00:00",
+        "stats": {}
+      }
+    ],
+    "availableSegments": [
+      {
+        "type": "legend",
+        "attributes": {},
+        "metadata": {}
+      }
+    ],
+    "expiryDate": "2020-06-24T10:35:53.4114854+00:00"
+  }
+}

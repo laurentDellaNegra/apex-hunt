@@ -31,7 +31,7 @@ export function App() {
       <Switch>
         <Route exact path="/" component={HomePage} />
         <Route exact path="/browse" component={BrowsePage} />
-        <Route exact path="/details" component={DetailsPage} />
+        <Route exact path="/details/:platform/:id" component={DetailsPage} />
         <Route component={NotFoundPage} />
       </Switch>
       <GlobalStyle />
