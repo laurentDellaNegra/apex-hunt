@@ -6,7 +6,7 @@ export const GlobalStyle = createGlobalStyle`
     height: 100%;
     width: 100%;
     /**TODO: tmp theme */
-    background-color: black;
+    background-color: #25292d;
     color: white;
   }
 
